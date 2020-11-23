@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce278315-d76c-4ef8-87eb-63f7c341082c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontfluttertattagine/images/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontfluttertattagine/lib/pagedaccueil.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontfluttertattagine/lib/pagedaccueil.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontfluttertattagine/lib/pagedaccueil.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tattaguineback/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontfluttertattagine/lib/pagedaccueil.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="679" column="23" lean-forward="true" selection-start-line="679" selection-start-column="23" selection-end-line="679" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -187,7 +161,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606150986483" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606154955641" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -246,18 +220,18 @@
       <updated>1605811893277</updated>
       <workItem from="1605811895303" duration="1362000" />
       <workItem from="1606129374609" duration="5089000" />
-      <workItem from="1606137731313" duration="10023000" />
+      <workItem from="1606137731313" duration="10716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16474000" />
+    <option name="totallyTimeSpent" value="17167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -280,7 +254,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Flutter Performance" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="14" weight="0.3276923" />
-      <window_info anchor="bottom" id="Messages" order="15" visible="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3276923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -332,8 +306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontfluttertattagine/lib/pagedaccueil.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="679" column="23" lean-forward="true" selection-start-line="679" selection-start-column="23" selection-end-line="679" selection-end-column="23" />
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
