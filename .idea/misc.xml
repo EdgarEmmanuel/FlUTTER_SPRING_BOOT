@@ -9,5 +9,10 @@
         <option value="$PROJECT_DIR$/tattaguineback/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/tattaguinefrontflutter/pom.xml" />
+      </set>
+    </option>
   </component>
 </project>

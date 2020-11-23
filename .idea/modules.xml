@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FlutterAppWithSpring.iml" filepath="$PROJECT_DIR$/.idea/FlutterAppWithSpring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tattaguineback/tattaguineback.iml" filepath="$PROJECT_DIR$/tattaguineback/tattaguineback.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tattaguineback/tattaguinefront.iml" filepath="$PROJECT_DIR$/tattaguineback/tattaguinefront.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontfluttertattagine/frontfluttertattagine.iml" filepath="$PROJECT_DIR$/frontfluttertattagine/frontfluttertattagine.iml" />
     </modules>
   </component>
 </project>
