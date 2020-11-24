@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.securityApp.dao.IResponsable;
+import com.example.securityApp.entities.Departement;
 import com.example.securityApp.entities.Responsable;
 
 @RestController
@@ -24,6 +25,11 @@ public class RestResponsable {
 	@GetMapping(value= {"/responsable"})
 	public List<Responsable> getAll(){
 		return iresponsable.findAll();
+	}
+	
+	@GetMapping(value= {"/responsable/departement/{id_responsable}"})
+	public  Departement getDepartementofRespo(@PathVariable int id_responsable ) {
+		return iresponsable.findDepartementofRespo(id_responsable);
 	}
 	
 	

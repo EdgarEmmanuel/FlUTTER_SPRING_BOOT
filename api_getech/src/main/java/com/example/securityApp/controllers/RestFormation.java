@@ -23,8 +23,7 @@ public class RestFormation {
 	@GetMapping(value= {"/formations"})
 	public List<Formation> getAll(){
 		return iformation.findAll();
-	}
-	
+	}	
 	
 	@GetMapping(value= {"/formation/{id_dep}"})
 	public List<Formation> getAllFormationOnId(@PathVariable int id_departement){
