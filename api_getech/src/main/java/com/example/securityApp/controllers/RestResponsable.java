@@ -1,6 +1,7 @@
 package com.example.securityApp.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -23,6 +24,12 @@ public class RestResponsable {
 	@GetMapping(value= {"/responsable"})
 	public List<Responsable> getAll(){
 		return iresponsable.findAll();
+	}
+	
+	
+	@GetMapping(value= {"/responsable/{id}"})
+	public Optional<Responsable> getRespoById(@PathVariable int id) {
+		return iresponsable.findById(id);
 	}
 	
 	
