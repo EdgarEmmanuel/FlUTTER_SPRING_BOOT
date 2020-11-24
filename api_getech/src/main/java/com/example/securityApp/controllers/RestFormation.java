@@ -25,6 +25,12 @@ public class RestFormation {
 		return iformation.findAll();
 	}
 	
+	
+	@GetMapping(value= {"/formation/{id_dep}"})
+	public List<Formation> getAllFormationOnId(@PathVariable int id_departement){
+		return iformation.findFormationByIdDepartement(id_departement);
+	}
+	
 	@PostMapping(value= {"/formation"})
 	public Formation saveFormation(@RequestBody() Formation formation) {
 		iformation.save(formation);
