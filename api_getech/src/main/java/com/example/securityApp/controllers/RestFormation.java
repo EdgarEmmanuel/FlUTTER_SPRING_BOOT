@@ -27,7 +27,7 @@ public class RestFormation {
 	
 	@GetMapping(value= {"/formation/{id_dep}"})
 	public List<Formation> getAllFormationOnId(@PathVariable int id_departement){
-		return iformation.findFormationByIdDepartement(id_departement);
+		return iformation.findByDepartement(id_departement);
 	}
 	
 	@PostMapping(value= {"/formation"})

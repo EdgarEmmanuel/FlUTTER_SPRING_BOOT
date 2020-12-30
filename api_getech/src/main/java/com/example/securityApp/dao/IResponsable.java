@@ -8,5 +8,5 @@ import com.example.securityApp.entities.Responsable;
 
 public interface IResponsable extends JpaRepository<Responsable, Integer> {
 	@Query("SELECT c FROM departement c WHERE c.id_respo=?1")
-	public Departement findDepartementofRespo(int id_respo);
+	public Departement getResponsableById(int id_respo);
 }

@@ -9,5 +9,5 @@ import com.example.securityApp.entities.Formation;
 
 public interface IFormation extends JpaRepository<Formation, Integer> {
 	@Query("SELECT c FROM formation c WHERE c.id_departement = ?1 ")
-	public List<Formation> findFormationByIdDepartement(int id);
+	public List<Formation> findByDepartement(int id);
 }

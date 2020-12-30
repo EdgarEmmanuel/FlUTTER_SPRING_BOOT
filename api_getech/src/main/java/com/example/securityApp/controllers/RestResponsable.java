@@ -20,20 +20,18 @@ public class RestResponsable {
 	@Autowired
 	private IResponsable iresponsable;
 	
-	
-	
-	@GetMapping(value= {"/responsable"})
+	@GetMapping(value= {"/responsables"})
 	public List<Responsable> getAll(){
 		return iresponsable.findAll();
 	}
 	
 	@GetMapping(value= {"/responsable/departement/{id_responsable}"})
 	public  Departement getDepartementofRespo(@PathVariable int id_responsable ) {
-		return iresponsable.findDepartementofRespo(id_responsable);
+		return iresponsable.getResponsableById(id_responsable);
 	}
 	
 	
-	@GetMapping(value= {"/responsable/{id}"})
+	@GetMapping(value= {"/responsables/{id}"})
 	public Optional<Responsable> getRespoById(@PathVariable int id) {
 		return iresponsable.findById(id);
 	}
