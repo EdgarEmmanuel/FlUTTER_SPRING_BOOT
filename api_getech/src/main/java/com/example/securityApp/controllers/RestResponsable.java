@@ -25,7 +25,7 @@ public class RestResponsable {
 		return iresponsable.findAll();
 	}
 	
-	@GetMapping(value= {"/responsable/departement/{id_responsable}"})
+	@GetMapping(value= {"/responsables/departements/{id_responsable}"})
 	public  Departement getDepartementofRespo(@PathVariable int id_responsable ) {
 		return iresponsable.getResponsableById(id_responsable);
 	}
@@ -37,14 +37,14 @@ public class RestResponsable {
 	}
 	
 	
-	@PostMapping(value= {"/responsable"},consumes = {"application/json"})
+	@PostMapping(value= {"/responsables"},consumes = {"application/json"})
 	public Responsable insertOne(@RequestBody Responsable respo) {
 		iresponsable.save(respo);
 		return respo;
 	}
 	
 	
-	@DeleteMapping(value= {"/responsable/{id}"})
+	@DeleteMapping(value= {"/responsables/{id}"})
 	public Responsable deleteOne(@PathVariable int id) {
 		Responsable rp = iresponsable.findById(id).orElse(null);
 		iresponsable.deleteById(id);

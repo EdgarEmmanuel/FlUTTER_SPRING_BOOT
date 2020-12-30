@@ -1,14 +1,10 @@
 package com.example.securityApp.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.securityApp.dao.IDepartement;
 import com.example.securityApp.entities.Departement;
@@ -23,15 +19,19 @@ public class RestDepartement {
 	public List<Departement> getAllDepartements(){
 		return idepartement.findAll();
 	}
+
+	@GetMapping(value={"/departements/{id}"})
+	public Departement getOneDepartement(@PathVariable("id") int id){
+		return idepartement.findById(id).orElse(null);
+	}
 	
-	
-	@PostMapping(value= {"/departement"},consumes = {"application/json"})
+	@PostMapping(value= {"/departements"},consumes = {"application/json"})
 	public Departement insertOne(@RequestBody() Departement departement) {
 		idepartement.save(departement);
 		return departement;
 	}
 	
-	@DeleteMapping(value= {"/departement/{id}"})
+	@DeleteMapping(value= {"/departements/{id}"})
 	public Departement deleteOne(@PathVariable() int id) {
 		Departement dep = idepartement.findById(id).orElse(null);
 		idepartement.deleteById(id);
