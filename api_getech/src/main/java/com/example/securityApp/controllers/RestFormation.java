@@ -28,7 +28,7 @@ public class RestFormation {
 	//get all the formations in one departement
 	@GetMapping(value= {"/formations/departements/{id}"})
 	public List<Formation> getAllFormationOnId(@PathVariable("id") int id_departement){
-		return iformation.findByDepartement(id_departement);
+		return iformation.getDepartementById(id_departement);
 	}
 
 	//insert one formation
