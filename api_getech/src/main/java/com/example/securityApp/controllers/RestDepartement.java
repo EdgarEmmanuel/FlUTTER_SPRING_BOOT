@@ -20,6 +20,11 @@ public class RestDepartement {
 		return idepartement.findAll();
 	}
 
+	@GetMapping(value= {"/departements/respo/{id_responsable}"})
+	public  List<Departement> getDepartementofRespo(@PathVariable int id_responsable ) {
+		return idepartement.getResponsableById(id_responsable);
+	}
+
 	@GetMapping(value={"/departements/{id}"})
 	public Departement getOneDepartement(@PathVariable("id") int id){
 		return idepartement.findById(id).orElse(null);

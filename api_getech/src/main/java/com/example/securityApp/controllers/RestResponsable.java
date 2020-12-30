@@ -25,10 +25,7 @@ public class RestResponsable {
 		return iresponsable.findAll();
 	}
 	
-	@GetMapping(value= {"/responsables/departements/{id_responsable}"})
-	public  Departement getDepartementofRespo(@PathVariable int id_responsable ) {
-		return iresponsable.getResponsableById(id_responsable);
-	}
+
 	
 	
 	@GetMapping(value= {"/responsables/{id}"})

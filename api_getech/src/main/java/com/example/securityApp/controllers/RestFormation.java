@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.securityApp.dao.IFormation;
@@ -19,25 +18,29 @@ public class RestFormation {
 	
 	@Autowired
 	private IFormation iformation;
-	
+
+	//get all the formations
 	@GetMapping(value= {"/formations"})
 	public List<Formation> getAll(){
 		return iformation.findAll();
 	}	
-	
-	@GetMapping(value= {"/formation/{id_dep}"})
-	public List<Formation> getAllFormationOnId(@PathVariable int id_departement){
+
+	//get all the formations in one departement
+	@GetMapping(value= {"/formations/departements/{id}"})
+	public List<Formation> getAllFormationOnId(@PathVariable("id") int id_departement){
 		return iformation.findByDepartement(id_departement);
 	}
-	
-	@PostMapping(value= {"/formation"})
+
+	//insert one formation
+	@PostMapping(value= {"/formations"} , consumes = {"application/json"})
 	public Formation saveFormation(@RequestBody() Formation formation) {
 		iformation.save(formation);
 		return formation;
 	}
-	
-	@DeleteMapping(value= {"/formation/{id}"})
-	public Formation deleteFormation(@PathVariable() int id) {
+
+	//delete one formation
+	@DeleteMapping(value= {"/formations/{id}"})
+	public Formation deleteFormation(@PathVariable("id") int id) {
 		Formation formation = iformation.getOne(id);
 		iformation.delete(iformation.getOne(id));
 		return formation;

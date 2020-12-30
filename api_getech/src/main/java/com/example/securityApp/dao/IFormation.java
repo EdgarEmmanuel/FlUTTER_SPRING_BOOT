@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.securityApp.entities.Formation;
 
 public interface IFormation extends JpaRepository<Formation, Integer> {
-	@Query("SELECT c FROM formation c WHERE c.id_departement = ?1 ")
+	@Query("SELECT f FROM formation f WHERE f.id_departement = ?1 ")
 	public List<Formation> findByDepartement(int id);
 }
