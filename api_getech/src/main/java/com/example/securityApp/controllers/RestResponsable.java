@@ -39,6 +39,12 @@ public class RestResponsable {
 		iresponsable.save(respo);
 		return respo;
 	}
+
+	
+	@PostMapping(value={"/login_respo"},consumes = {"application/json"})
+	public Responsable loginREspo(@RequestBody Responsable respo){
+		return iresponsable.getOne(respo.getId());
+	}
 	
 	
 	@DeleteMapping(value= {"/responsables/{id}"})
