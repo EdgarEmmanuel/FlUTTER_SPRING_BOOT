@@ -1,13 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:frontfluttertattagine/pages/Login.dart';
+import 'package:frontfluttertattagine/pages/Numerique.dart';
 
 class AccueilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("CFP-GETECH",style: TextStyle(
-          color: Colors.orange, fontFamily: 'times New Roman',fontSize: 22,
+        title: Center(
+          child:Text("CFP-GETECH",
+              style: TextStyle(
+                color: Colors.orange,
+                fontFamily: 'times New Roman',
+                fontSize: 32,
+                fontWeight: FontWeight.bold
         )),
+        )
       ),
       body: Center(
         child: Text("Bienvenue",style: TextStyle(
@@ -38,18 +47,18 @@ class AccueilPage extends StatelessWidget {
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(
-                  //  builder: (context)=> ProfilePage()
+                  builder: (context)=> Login()
                 ));
               },
             ),
             ListTile(
               trailing: Icon(Icons.arrow_right),
-              leading: Icon(Icons.dehaze),
-              title: Text('Departements'),
+              leading: Icon(Icons.personal_video),
+              title: Text('Departement Numerique'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(
-                  //builder: (context) => PharmaciePage()
+                  builder: (context) => Numerique()
                 ));
               },
             ),
@@ -60,23 +69,6 @@ class AccueilPage extends StatelessWidget {
 //            ),
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu),
-            title: Text('Menu'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.phone),
-            title: Text('Contact'),
-          ),
-
-        ],
       ),
     );
   }
