@@ -6,7 +6,7 @@ class AccueilPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("CFP-GETECH",style: TextStyle(
-          color: Colors.black, fontFamily: 'times New Roman',fontSize: 22,
+          color: Colors.orange, fontFamily: 'times New Roman',fontSize: 22,
         )),
       ),
       body: Center(
@@ -20,19 +20,21 @@ class AccueilPage extends StatelessWidget {
           children:  <Widget>[
             DrawerHeader(
               child: Center(
-                child: CircleAvatar(
-                  backgroundImage: AssetImage("./images/profile.jpg"),
-                  radius: 50,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  child: Container(
+                    child:Image.asset("./images/cfp.png"),
+                  )
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.cyan,
+                color: Color(0xff3b8391),
               ),
             ),
             ListTile(
               trailing: Icon(Icons.arrow_right),
               leading: Icon(Icons.account_circle),
-              title: Text('Profile'),
+              title: Text('Se Connecter'),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(
@@ -43,7 +45,7 @@ class AccueilPage extends StatelessWidget {
             ListTile(
               trailing: Icon(Icons.arrow_right),
               leading: Icon(Icons.dehaze),
-              title: Text('Liste des pharmacie'),
+              title: Text('Departements'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(

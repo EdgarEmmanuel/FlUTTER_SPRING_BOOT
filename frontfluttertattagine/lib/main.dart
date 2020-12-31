@@ -7,7 +7,7 @@ void main()=>runApp(
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
         appBarTheme: AppBarTheme(
-            color: Colors.cyan
+            color: Color(0xff3b8391)
         ),
       ),
       debugShowCheckedModeBanner: false,
