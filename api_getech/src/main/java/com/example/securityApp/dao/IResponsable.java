@@ -9,5 +9,6 @@ import com.example.securityApp.entities.Responsable;
 import java.util.List;
 
 public interface IResponsable extends JpaRepository<Responsable, Integer> {
-
+    @Query("SELECT c FROM responsable c where c.email=?1 and password=?2")
+    public Responsable getResponsableByEmailAndPassword(String email,String password);
 }

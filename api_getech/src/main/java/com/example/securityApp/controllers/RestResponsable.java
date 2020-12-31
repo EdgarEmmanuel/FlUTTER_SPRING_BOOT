@@ -4,12 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.securityApp.dao.IResponsable;
 import com.example.securityApp.entities.Departement;
@@ -24,10 +19,7 @@ public class RestResponsable {
 	public List<Responsable> getAll(){
 		return iresponsable.findAll();
 	}
-	
 
-	
-	
 	@GetMapping(value= {"/responsables/{id}"})
 	public Optional<Responsable> getRespoById(@PathVariable int id) {
 		return iresponsable.findById(id);
@@ -40,10 +32,9 @@ public class RestResponsable {
 		return respo;
 	}
 
-	
-	@PostMapping(value={"/login_respo"},consumes = {"application/json"})
-	public Responsable loginREspo(@RequestBody Responsable respo){
-		return iresponsable.getOne(respo.getId());
+	@PostMapping(value={"/login_respo"},consumes = {"application/x-www-form-urlencoded"})
+	public Responsable loginREspo(@RequestParam("email") String email, @RequestParam("password") String password){
+		return iresponsable.getResponsableByEmailAndPassword(email,password);
 	}
 	
 	
