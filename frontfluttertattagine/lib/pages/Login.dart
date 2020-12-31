@@ -18,12 +18,26 @@ class Login extends StatelessWidget{
       ),
         backgroundColor: Color(0xff3b8391),
       ),
-      body: Center(
-        child:Container(
-          child: Text(
-          "LOGIN PAGE"
-        ),
-      ),
+      body: Column(
+        children: <Widget>[
+         TextField(
+          decoration: InputDecoration(
+            hintText: "Login"
+          ),
+         ),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Password"
+            ),
+          ),
+          RaisedButton(
+            child: Text(
+              "Se connecter"
+            ),
+            color: Colors.orange,
+            hoverColor: Colors.orange,
+          ),
+        ],
       )
     );
   }
