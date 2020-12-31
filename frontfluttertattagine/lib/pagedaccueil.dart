@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:frontfluttertattagine/pages/Gestion.dart';
+import 'package:frontfluttertattagine/pages/Industrie.dart';
 import 'package:frontfluttertattagine/pages/Login.dart';
 import 'package:frontfluttertattagine/pages/Numerique.dart';
+import 'package:frontfluttertattagine/pages/Tertiaire.dart';
 
 class AccueilPage extends StatelessWidget {
   @override
@@ -54,7 +57,7 @@ class AccueilPage extends StatelessWidget {
             ListTile(
               trailing: Icon(Icons.arrow_right),
               leading: Icon(Icons.personal_video),
-              title: Text('Departement Numerique'),
+              title: Text('Departement du Numerique'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(
@@ -62,11 +65,45 @@ class AccueilPage extends StatelessWidget {
                 ));
               },
             ),
-//            ListTile(
-//              trailing: Icon(Icons.arrow_right),
-//              leading: Icon(Icons.school),
-//              title: Text('Candidature'),
-//            ),
+            ListTile(
+              trailing: Icon(Icons.arrow_right),
+              leading: Icon(Icons.build),
+              title: Text(
+                "Departement de L'industrie"
+              ),
+              onTap: ()=>{
+                Navigator.pop(context),
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=>Industrie()
+                ))
+              },
+            ),
+            ListTile(
+              trailing: Icon(Icons.arrow_right),
+              leading: Icon(Icons.attach_money),
+              title: Text(
+                "Departement de la Gestion"
+              ),
+              onTap: ()=>{
+                Navigator.pop(context),
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> Gestion()
+                ))
+              },
+            ),
+            ListTile(
+              trailing: Icon(Icons.arrow_right),
+              leading: Icon(Icons.wc),
+              title: Text(
+                "Departement du Tertiaire"
+              ),
+              onTap: ()=>{
+                Navigator.pop(context),
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=>Tertaire()
+                ))
+              },
+            ),
           ],
         ),
       ),

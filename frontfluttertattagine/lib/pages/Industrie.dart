@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Numerique extends StatelessWidget{
+class Industrie extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -9,10 +9,10 @@ class Numerique extends StatelessWidget{
       appBar: AppBar(
         title: Center(
           child: Text(
-            "METIERS DU NUMERIQUE",
+            "METIERS DE L'INDUSTRIE",
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: Colors.orange
+              color:Colors.orange
             ),
           ),
         ),
