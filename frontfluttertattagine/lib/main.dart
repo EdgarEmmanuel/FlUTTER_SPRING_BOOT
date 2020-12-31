@@ -10,7 +10,7 @@ void main()=>runApp(
             color: Color(0xff3b8391)
         ),
       ),
-      debugShowCheckedModeBanner: false,
+      //debugShowCheckedModeBanner: false,
     )
 );
 

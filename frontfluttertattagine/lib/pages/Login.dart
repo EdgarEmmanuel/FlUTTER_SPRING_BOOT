@@ -1,10 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
-class Login extends StatelessWidget{
+class Login extends StatefulWidget {
+  @override
+  State<Login> createState() {
+    return _Login();
+  }
+}
+
+  class _Login extends State<Login>{
+    String password="";
+    String login="";
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -24,11 +35,24 @@ class Login extends StatelessWidget{
           decoration: InputDecoration(
             hintText: "Login"
           ),
+           onChanged: (value)=>{
+            setState(()=> {
+                this.login=value
+              }
+            )
+           },
          ),
           TextField(
             decoration: InputDecoration(
               hintText: "Password"
             ),
+            onChanged: (value)=>{
+              setState(
+                  ()=>{
+                    this.password=value
+                  }
+              )
+            },
           ),
           RaisedButton(
             child: Text(
@@ -41,5 +65,7 @@ class Login extends StatelessWidget{
       )
     );
   }
+
+
 
 }
