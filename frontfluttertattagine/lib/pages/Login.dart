@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:frontfluttertattagine/pages/ResponsableDashboard.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -31,35 +32,61 @@ class Login extends StatefulWidget {
       ),
       body: Column(
         children: <Widget>[
-         TextField(
-          decoration: InputDecoration(
-            hintText: "Login"
-          ),
-           onChanged: (value)=>{
-            setState(()=> {
-                this.login=value
-              }
-            )
-           },
-         ),
-          TextField(
-            decoration: InputDecoration(
-              hintText: "Password"
-            ),
-            onChanged: (value)=>{
-              setState(
-                  ()=>{
-                    this.password=value
+         Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: Container(
+             child: TextField(
+              decoration: InputDecoration(
+                hintText: "Login",
+                hintStyle: TextStyle(
+                  fontWeight: FontWeight.bold
+                )
+              ),
+               onChanged: (value)=>{
+                setState(()=> {
+                    this.login=value
                   }
-              )
-            },
-          ),
-          RaisedButton(
-            child: Text(
-              "Se connecter"
+                )
+               },
+             ),
+           ),
+         ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: "Password",
+                hintStyle: TextStyle(
+                  fontWeight: FontWeight.bold
+                )
+              ),
+              onChanged: (value)=>{
+                setState(
+                    ()=>{
+                      this.password=value
+                    }
+                )
+              },
             ),
-            color: Colors.orange,
-            hoverColor: Colors.orange,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: RaisedButton(
+              color: Color(0xff3b8391),
+              child: Text(
+                "Se connecter",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.orange
+                ),
+              ),
+              hoverColor: Colors.orange,
+              onPressed: ()=>{
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => ResponsableDashboard(password,login)
+                ))
+              },
+            ),
           ),
         ],
       )
