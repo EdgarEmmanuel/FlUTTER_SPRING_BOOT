@@ -33,7 +33,7 @@ public class RestResponsable {
 	}
 
 	@PostMapping(value={"/login_respo"},consumes = {"application/x-www-form-urlencoded"})
-	public Responsable loginRespo(@RequestParam("email") String email,
+	public Responsable loginRespo(@RequestParam(value = "email" ,required = false) String email,
 								  @RequestParam("password") String password){
 		return iresponsable.getResponsableByEmailAndPassword(email,password);
 	}
