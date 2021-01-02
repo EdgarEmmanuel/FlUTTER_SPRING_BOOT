@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -28,21 +31,28 @@ class __Respo extends State<ResponsableDashboard>{
     login_of_user(widget.password , widget.login);
   }
 
-  login_of_user(String password,String login){
+   login_of_user(String password,String login)async{
       String url = "http://192.168.1.6:9000/login_respo";
-      http.post(url,
-          headers:<String,String>{
-            'Content-Type':'application/x-www-urlencoded'
+
+      //create the form data
+      var body = {
+        'email':login,
+        'password':password
+      };
+
+      await http.post(url,
+          headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded"
           },
-        body:<String,String>{
-            'email':widget.login,
-            'password':widget.password
-        }
-          ).then((value) => {
-            null
-      }).catchError((onError)=>{
-        null
+        body: json.encode(body),
+        encoding: Encoding.getByName('utf-8')
+      ).then((value) => {
+        print("value => "+value.body.toString())
+      }).catchError((err)=>{
+        print("error => "+err.toString())
       });
+
   }
 
   @override
