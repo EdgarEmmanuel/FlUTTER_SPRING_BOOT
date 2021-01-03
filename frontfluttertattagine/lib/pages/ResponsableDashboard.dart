@@ -40,20 +40,25 @@ class __Respo extends State<ResponsableDashboard>{
         'password':password
       };
 
-      http.Response response= await http.post(url,
+       await http.post(url,
           headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/x-www-form-urlencoded",
+            'Accept': 'application/json'
           },
         body: body,
-        encoding: Encoding.getByName('utf-8')
-      );
-      String data = response.statusCode.toString();
-      print("value => "+data.toString());
-      //     .then((response) => {
-      //   print("value => "+response.body)
-      // }).catchError((err)=>{
-      //   print("error => "+err.toString())
-      // });
+        //encoding: Encoding.getByName('utf-8')
+      ).then((value) {
+
+        if(value.body.isNotEmpty){
+          print(value.body);
+          this.ResponsableData = json.decode(value.body);
+        }else{
+          print("an error occured");
+        }
+
+       });
+
+
 
   }
 
