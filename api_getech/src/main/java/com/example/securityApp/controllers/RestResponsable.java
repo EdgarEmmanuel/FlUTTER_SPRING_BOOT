@@ -32,8 +32,8 @@ public class RestResponsable {
 		return respo;
 	}
 
-	@PostMapping(value={"/login_respo"},consumes = {"application/x-www-form-urlencoded"})
-	public Responsable loginRespo(@RequestParam(value = "email" ,required = false) String email,
+	@PostMapping(value={"/login_respo"},consumes = {"multipart/form-data"})
+	public Responsable loginRespo(@RequestParam("email") String email,
 								  @RequestParam("password") String password){
 		return iresponsable.getResponsableByEmailAndPassword(email,password);
 	}
