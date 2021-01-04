@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -32,23 +31,21 @@ class __Respo extends State<ResponsableDashboard>{
   }
 
    login_of_user(String password,String login)async{
-      String url = "http://192.168.1.6:9000/login_respo";
+      String url = "http://192.168.1.44:9000/login_respo";
 
-      //create the form data
-      var body = {
-        'email':login,
-        'password':password
+      Map<String,String> form_data = {
+        "email":login,
+        "password":password
       };
 
        await http.post(url,
           headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
+            "Content-Type": "multipart/form-data",
             'Accept': 'application/json'
           },
-        body: body,
+        body: form_data,
         //encoding: Encoding.getByName('utf-8')
       ).then((value) {
-
         if(value.body.isNotEmpty){
           print(value.body);
           this.ResponsableData = json.decode(value.body);
@@ -57,8 +54,6 @@ class __Respo extends State<ResponsableDashboard>{
         }
 
        });
-
-
 
   }
 
