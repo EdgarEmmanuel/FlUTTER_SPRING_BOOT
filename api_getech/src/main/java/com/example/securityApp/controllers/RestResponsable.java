@@ -1,14 +1,18 @@
 package com.example.securityApp.controllers;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.securityApp.dao.IResponsable;
 import com.example.securityApp.entities.Departement;
 import com.example.securityApp.entities.Responsable;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 public class RestResponsable {
@@ -32,10 +36,17 @@ public class RestResponsable {
 		return respo;
 	}
 
-	@PostMapping(value={"/login_respo"},consumes = {"multipart/form-data"})
-	public Responsable loginRespo(@RequestParam("email") String email,
-								  @RequestParam("password") String password){
-		return iresponsable.getResponsableByEmailAndPassword(email,password);
+
+	@PostMapping(value={"/login_respo"},consumes = {"application/json"})
+	public Responsable loginRespo(HttpServletRequest request)  {
+		Responsable resp = null;
+		try {
+			resp = new ObjectMapper().readValue(request.getInputStream(), Responsable.class);
+		} catch (IOException e) {
+			resp.setEmail("");
+			resp.setPassword("");
+		}
+		return iresponsable.getResponsableByEmailAndPassword(resp.getEmail(),resp.getPassword());
 	}
 	
 	

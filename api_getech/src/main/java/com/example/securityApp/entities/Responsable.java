@@ -52,9 +52,16 @@ public class Responsable {
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
 	}
-	
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Responsable{" +
+				"id=" + id +
+				", nom='" + nom + '\'' +
+				", prenom='" + prenom + '\'' +
+				", email='" + email + '\'' +
+				", password='" + password + '\'' +
+				", adresse='" + adresse + '\'' +
+				'}';
+	}
 }
