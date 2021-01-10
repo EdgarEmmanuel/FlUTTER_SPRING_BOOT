@@ -37,7 +37,7 @@ public class RestResponsable {
 	}
 
 
-	@PostMapping(value={"/login_respo"},consumes = {"application/json"})
+	@PostMapping(value={"/login_respo"})
 	public Responsable loginRespo(HttpServletRequest request)  {
 		Responsable resp = null;
 		try {
