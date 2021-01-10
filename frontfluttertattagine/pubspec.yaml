@@ -24,7 +24,7 @@ dependencies:
   adobe_xd:
   flutter:
     sdk: flutter
-  http: ^0.12.2
+  http: ^0.12.1
   dio: ^3.0.0
 
 

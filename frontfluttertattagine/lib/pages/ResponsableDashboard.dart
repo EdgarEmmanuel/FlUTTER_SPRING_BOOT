@@ -9,8 +9,9 @@ class ResponsableDashboard extends StatefulWidget{
 
   String login="";
   String password="";
-  ResponsableDashboard(String login , String password){
-    this.password = login;
+  ResponsableDashboard(String password , String login){
+    this.password = password;
+    this.login = login;
   }
 
   @override
@@ -35,32 +36,20 @@ class __Respo extends State<ResponsableDashboard>{
       String url = "http://192.168.1.8:9000/login_respo";
 
       var form_data = {
-        "email":login,
-        "password":password
+        'email':login,
+        'password':password
       };
-      // await http.post(url,
-      //     headers: <String , String>{
-      //       'Content-Type': 'application/json; charset=UTF-8',
-      //     },
-      //     body: jsonEncode(<String,dynamic>{
-      //       "email":login,
-      //       "password":password
-      //     })
-      //   //encoding: Encoding.getByName('utf-8')
-      // );
 
-       await Dio().post(
-          url,
-           data: {
-             "email": login,
-             "password": password
-           },
-         options: new Options(
-           contentType: "application/json"
-         )
-       ).then((value) => (
-        print(value.data)
-       ));
+       await http.post(url,
+          body: json.encode(form_data),
+        //encoding: Encoding.getByName('utf-8')
+      ).then((response) => {
+        print(jsonDecode(response.body))
+       });
+
+
+
+
 
   }
 
