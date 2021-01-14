@@ -4,6 +4,13 @@ import 'package:flutter/painting.dart';
 import 'package:frontfluttertattagine/pages/ResponsableDashboard.dart';
 
 class Login extends StatefulWidget {
+
+  String message ="";
+
+  Login(String message){
+    this.message = message;
+  }
+
   @override
   State<Login> createState() {
     return _Login();
@@ -88,8 +95,15 @@ class Login extends StatefulWidget {
               },
             ),
           ),
+          Padding(
+            child: Container(
+              child: Text(
+                widget.message
+              )
+            ),
+          )
         ],
-      )
+      ),
     );
   }
 

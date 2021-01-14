@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:dio/dio.dart' ;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:frontfluttertattagine/pages/Login.dart';
 import 'package:http/http.dart' as http;
 
 class ResponsableDashboard extends StatefulWidget{
@@ -33,7 +34,7 @@ class __Respo extends State<ResponsableDashboard>{
   }
 
    login_of_user(String password,String login)async{
-      String url = "http://192.168.1.8:9000/login_respo";
+      String url = "http://10.42.0.60:9000/login_respo";
 
       var form_data = {
         'email':login,
@@ -44,13 +45,19 @@ class __Respo extends State<ResponsableDashboard>{
           body: json.encode(form_data),
         //encoding: Encoding.getByName('utf-8')
       ).then((response) => {
-        print(jsonDecode(response.body))
+        print(jsonDecode(response.body).toString())
+        // if(response.body.toString().length<0){
+        //   Navigator.push(context,MaterialPageRoute(
+        //     builder: (context) => Login("LOGIN OR PASSWORD INCORRECT !")
+        //   ))
+        // }else{
+        //   print(jsonDecode(response.body))
+        // }
+       }).catchError((onError)=>{
+           Navigator.push(context,MaterialPageRoute(
+             builder: (context) => Login("LOGIN OR PASSWORD INCORRECT !")
+           ))
        });
-
-
-
-
-
   }
 
   @override
