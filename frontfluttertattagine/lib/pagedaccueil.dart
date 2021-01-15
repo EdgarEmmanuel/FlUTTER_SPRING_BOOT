@@ -92,6 +92,21 @@ class AccueilPage extends StatelessWidget {
               ],
             )
           ),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Column(
+                children: <Widget>[
+                  Image.network("https://www.mutuelle-autoentrepreneur.fr/img/multiactivite.jpg"),
+                  RaisedButton(
+                    color: Color(0xff3b8391),
+                    child: Text(
+                      "METIERS DU TERTIAIRE"
+                    ),
+                    hoverColor: Colors.orange,
+                  )
+                ],
+              ),
+            ),
         ],
       ),
       ),
