@@ -23,25 +23,74 @@ class AccueilPage extends StatelessWidget {
       ),
       body:SingleChildScrollView(
         child:Column(
-        verticalDirection:VerticalDirection.down ,
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
+          verticalDirection:VerticalDirection.down ,
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Container(
-                child: Image.network("https://lh3.googleusercontent.com/proxy/E82mguZ-W4SvW2vTyzC8V1EvyeigmDv-REIXdH-bd8zLBlNITIaup5rqX1jnABcOEhEIybLt3oqaeG-H-IzYvvufwJUinx7xGxl6uQCB4nToNB1UNZM0SY-VaoGMY35XkwkPTRld8w",
-                ),
-              )
+              padding: EdgeInsets.all(10.0),
+              child: Column(
+                children:<Widget>[
+                    Image.network("https://lh3.googleusercontent.com/proxy/E82mguZ-W4SvW2vTyzC8V1EvyeigmDv-REIXdH-bd8zLBlNITIaup5rqX1jnABcOEhEIybLt3oqaeG-H-IzYvvufwJUinx7xGxl6uQCB4nToNB1UNZM0SY-VaoGMY35XkwkPTRld8w",
+                    ),
+                  RaisedButton(
+                      color: Color(0xff3b8391),
+                    child: Text(
+                      "METIERS DU NUMERIQUE",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold
+                      ),
+                    ),
+                    hoverColor: Colors.orange,
+                    onPressed: ()=>{
+                        print("bouton vers metiers du numerique  ")
+                    },
+                  )
+                ],
+              ),
             ),
           Padding(
             padding: EdgeInsets.all(8.0),
-            child: Image.network("https://d2oc3pyolp0fbe.cloudfront.net/local/cache-gd2/5388043ae65f5890a8e983117b68d43f.jpg",),
+            child:Column(
+              children:<Widget>[
+                Image.network("https://d2oc3pyolp0fbe.cloudfront.net/local/cache-gd2/5388043ae65f5890a8e983117b68d43f.jpg",),
+                RaisedButton(
+                  color: Color(0xff3b8391),
+                  child: Text(
+                    "METIES DE L'INDUSTRIE",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
+                  hoverColor: Colors.orange,
+                  onPressed: ()=>{
+                    print("bouton vers details metiers industrie")
+                  },
+                )
+              ],
+          ),
           ),
           Padding(
             padding: EdgeInsets.all(8.0),
-            child: Image.network("https://www.salarysolution.be/wp-content/uploads/2018/04/annonce.jpg",),
+            child:Column(
+              children : <Widget>[
+                Image.network("https://www.salarysolution.be/wp-content/uploads/2018/04/annonce.jpg",),
+                RaisedButton(
+                  color: Color(0xff3b8391),
+                  child: Text(
+                    "METIERS DE LA GESTION",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
+                  hoverColor: Colors.orange,
+                  onPressed: ()=>{
+                    print("button for redorect to the gestion page")
+                  },
+                )
+              ],
+            )
           ),
         ],
       ),
