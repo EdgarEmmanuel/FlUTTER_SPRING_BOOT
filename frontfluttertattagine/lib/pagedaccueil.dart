@@ -21,10 +21,30 @@ class AccueilPage extends StatelessWidget {
         )),
         )
       ),
-      body: Center(
-        child: Text("Bienvenue",style: TextStyle(
-            color: Colors.orange, fontFamily: 'times New Roman',fontSize: 22
-        ),),
+      body:SingleChildScrollView(
+        child:Column(
+        verticalDirection:VerticalDirection.down ,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Container(
+                child: Image.network("https://lh3.googleusercontent.com/proxy/E82mguZ-W4SvW2vTyzC8V1EvyeigmDv-REIXdH-bd8zLBlNITIaup5rqX1jnABcOEhEIybLt3oqaeG-H-IzYvvufwJUinx7xGxl6uQCB4nToNB1UNZM0SY-VaoGMY35XkwkPTRld8w",
+                ),
+              )
+            ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Image.network("https://d2oc3pyolp0fbe.cloudfront.net/local/cache-gd2/5388043ae65f5890a8e983117b68d43f.jpg",),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Image.network("https://www.salarysolution.be/wp-content/uploads/2018/04/annonce.jpg",),
+          ),
+        ],
+      ),
       ),
       drawer: Drawer(
         child: ListView(

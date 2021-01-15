@@ -61,6 +61,7 @@ class Login extends StatefulWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
+              obscureText: true,
               decoration: InputDecoration(
                 hintText: "Password",
                 hintStyle: TextStyle(
@@ -96,11 +97,10 @@ class Login extends StatefulWidget {
             ),
           ),
           Padding(
-            child: Container(
-              child: Text(
-                widget.message
-              )
-            ),
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "${widget.message}"
+            )
           )
         ],
       ),
