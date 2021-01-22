@@ -44,7 +44,10 @@ class AccueilPage extends StatelessWidget {
                     ),
                     hoverColor: Colors.orange,
                     onPressed: ()=>{
-                        print("bouton vers metiers du numerique  ")
+                        Navigator.pop(context),
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => Numerique()
+                      )),
                     },
                   )
                 ],
@@ -65,7 +68,10 @@ class AccueilPage extends StatelessWidget {
                   ),
                   hoverColor: Colors.orange,
                   onPressed: ()=>{
-                    print("bouton vers details metiers industrie")
+                    Navigator.pop(context),
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => Industrie()
+                    )),
                   },
                 )
               ],
@@ -86,7 +92,10 @@ class AccueilPage extends StatelessWidget {
                   ),
                   hoverColor: Colors.orange,
                   onPressed: ()=>{
-                    print("button for redorect to the gestion page")
+                    Navigator.pop(context),
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => Gestion()
+                    )),
                   },
                 )
               ],
@@ -100,9 +109,18 @@ class AccueilPage extends StatelessWidget {
                   RaisedButton(
                     color: Color(0xff3b8391),
                     child: Text(
-                      "METIERS DU TERTIAIRE"
+                      "METIERS DU TERTIAIRE",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold
+                      ),
                     ),
                     hoverColor: Colors.orange,
+                    onPressed: ()=>{
+                      Navigator.pop(context),
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => Tertaire()
+                      ))
+                    },
                   )
                 ],
               ),
