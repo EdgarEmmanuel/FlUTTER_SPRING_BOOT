@@ -32,7 +32,7 @@ class AccueilPage extends StatelessWidget {
               padding: EdgeInsets.all(10.0),
               child: Column(
                 children:<Widget>[
-                    Image.network("https://lh3.googleusercontent.com/proxy/E82mguZ-W4SvW2vTyzC8V1EvyeigmDv-REIXdH-bd8zLBlNITIaup5rqX1jnABcOEhEIybLt3oqaeG-H-IzYvvufwJUinx7xGxl6uQCB4nToNB1UNZM0SY-VaoGMY35XkwkPTRld8w",
+                    Image.network("https://image.freepik.com/vecteurs-libre/coeur-metier-numerique_1258-3185.jpg",
                     ),
                   RaisedButton(
                       color: Color(0xff3b8391),

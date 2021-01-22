@@ -39,6 +39,14 @@ class Login extends StatefulWidget {
       ),
       body: Column(
         children: <Widget>[
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Container(
+              child: Image.network("https://www.tuktukdesign.com/wp-content/uploads/2020/01/login-icon-vector.jpg",
+                width: 60.0,
+              ),
+            ),
+          ),
          Padding(
            padding: const EdgeInsets.all(8.0),
            child: Container(
