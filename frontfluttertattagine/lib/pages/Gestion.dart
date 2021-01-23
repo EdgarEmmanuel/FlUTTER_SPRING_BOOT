@@ -55,7 +55,8 @@ class _Gestion extends State<Gestion>{
               "POUR CE DEPARTEMENT , VEUILLEZ PATIENTER NOUS SOMMES ACTUELLEMENT SUR CE CAS ",
               textAlign: TextAlign.center,
               style:TextStyle(
-                fontWeight: FontWeight.bold
+                fontWeight: FontWeight.bold,
+                fontSize: 22.0,
               )
             ),
           ),
@@ -78,11 +79,17 @@ class _Gestion extends State<Gestion>{
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.message),
+            icon: Icon(
+                Icons.message,
+              color: Color(0xff3b8391),
+            ),
             title: Text("ABOUT US"),
           ),
           BottomNavigationBarItem(
-              icon:Icon(Icons.wc),
+              icon:Icon(
+                  Icons.wc,
+                 color:Color(0xff3b8391) ,
+              ),
               title: Text("OUR GOAL")
           )
         ],

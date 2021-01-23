@@ -63,6 +63,8 @@ flutter:
     - images/industrie.jpg
     - images/gestionHome.jpg
     - images/tertiaire.jpg
+    - images/industrieGif.gif
+    - images/tertiaireGif.gif
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

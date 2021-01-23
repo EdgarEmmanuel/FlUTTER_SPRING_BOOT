@@ -25,7 +25,7 @@ class Industrie extends StatelessWidget{
           Padding(
             padding: EdgeInsets.all(10.0),
             child: Container(
-              child: Image.network("https://visme.co/blog/wp-content/uploads/2020/02/header-1200.gif"),
+              child: Image.asset("images/industrieGif.gif"),
             ),
           ),
           Padding(
@@ -58,11 +58,11 @@ class Industrie extends StatelessWidget{
         bottomNavigationBar: BottomNavigationBar(
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.message),
+              icon: Icon(Icons.message,color:Color(0xff3b8391)),
               title: Text("ABOUT US"),
             ),
             BottomNavigationBarItem(
-                icon:Icon(Icons.wc),
+                icon:Icon(Icons.wc,color:Color(0xff3b8391)),
                 title: Text("OUR GOAL")
             )
           ],

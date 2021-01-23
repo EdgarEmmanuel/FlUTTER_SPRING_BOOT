@@ -23,15 +23,16 @@ class Tertaire extends StatelessWidget{
         children: <Widget>[
           Padding(
             padding: EdgeInsets.all(10.0),
-            child: Image.network("https://i.pinimg.com/originals/e6/e2/2c/e6e22cb12f950282195a4ca8366eaaeb.gif"),
+            child: Image.asset("images/tertiaireGif.gif"),
           ),
           Padding(
             padding: EdgeInsets.all(10.0),
             child: Text(
-              "LES INFORMATIONS CONCERNANT CE DEPARTEMENT SONT POUR LE MOMENT INDISPONIBLES",
+              "LES INFORMATIONS CONCERNANT CE DEPARTEMENT SONT POUR LE MOMENT INDISPONIBLE",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                fontSize: 22.0,
               ),
             ),
           ),
@@ -54,11 +55,11 @@ class Tertaire extends StatelessWidget{
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.message),
+            icon: Icon(Icons.message,color:Color(0xff3b8391)),
             title: Text("ABOUT US"),
           ),
           BottomNavigationBarItem(
-            icon:Icon(Icons.wc),
+            icon:Icon(Icons.wc,color:Color(0xff3b8391)),
             title: Text("OUR GOAL")
           )
         ],
