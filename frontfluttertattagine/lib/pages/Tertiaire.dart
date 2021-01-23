@@ -62,7 +62,7 @@ class Tertaire extends StatelessWidget{
             title: Text("OUR GOAL")
           )
         ],
-      )
+      ),
     );
   }
 

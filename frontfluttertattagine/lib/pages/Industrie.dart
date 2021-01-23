@@ -55,6 +55,18 @@ class Industrie extends StatelessWidget{
           )
         ],
       ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.message),
+              title: Text("ABOUT US"),
+            ),
+            BottomNavigationBarItem(
+                icon:Icon(Icons.wc),
+                title: Text("OUR GOAL")
+            )
+          ],
+        )
     );
   }
 

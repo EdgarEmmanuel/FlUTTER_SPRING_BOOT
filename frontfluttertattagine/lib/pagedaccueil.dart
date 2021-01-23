@@ -32,8 +32,7 @@ class AccueilPage extends StatelessWidget {
               padding: EdgeInsets.all(10.0),
               child: Column(
                 children:<Widget>[
-                    Image.network("https://image.freepik.com/vecteurs-libre/coeur-metier-numerique_1258-3185.jpg",
-                    ),
+                    Image.asset("images/numerique.jpg"),
                   RaisedButton(
                       color: Color(0xff3b8391),
                     child: Text(
@@ -57,7 +56,7 @@ class AccueilPage extends StatelessWidget {
             padding: EdgeInsets.all(8.0),
             child:Column(
               children:<Widget>[
-                Image.network("https://d2oc3pyolp0fbe.cloudfront.net/local/cache-gd2/5388043ae65f5890a8e983117b68d43f.jpg",),
+                Image.asset("images/industrie.jpg"),
                 RaisedButton(
                   color: Color(0xff3b8391),
                   child: Text(
@@ -81,7 +80,7 @@ class AccueilPage extends StatelessWidget {
             padding: EdgeInsets.all(8.0),
             child:Column(
               children : <Widget>[
-                Image.network("https://www.salarysolution.be/wp-content/uploads/2018/04/annonce.jpg",),
+                Image.asset("images/gestionHome.jpg"),
                 RaisedButton(
                   color: Color(0xff3b8391),
                   child: Text(
@@ -105,7 +104,7 @@ class AccueilPage extends StatelessWidget {
               padding: EdgeInsets.all(10.0),
               child: Column(
                 children: <Widget>[
-                  Image.network("https://www.mutuelle-autoentrepreneur.fr/img/multiactivite.jpg"),
+                  Image.asset("images/tertiaire.jpg"),
                   RaisedButton(
                     color: Color(0xff3b8391),
                     child: Text(
