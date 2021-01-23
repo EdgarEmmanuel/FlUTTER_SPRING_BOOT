@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:frontfluttertattagine/pagedaccueil.dart';
 
 class Industrie extends StatelessWidget{
   @override
@@ -30,13 +31,27 @@ class Industrie extends StatelessWidget{
           Padding(
             padding: EdgeInsets.all(10.0),
             child: Text(
-              "DESOLE CHERS UTILISATEURS CE DEPARTEMENT N'EST PAS ENCORE DISPONIBLE",
+              "DESOLE CHERS UTILISATEURS LES INFORMATIONS POUR CE DEPARTEMENT N'EST PAS ENCORE DISPONIBLE",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 22.0,
               ),
             ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+              child: Text(
+                "RETOUR",
+              ),
+              onPressed: ()=>{
+                  Navigator.pop(context),
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => AccueilPage()
+                ))
+              },
+            )
           )
         ],
       ),
