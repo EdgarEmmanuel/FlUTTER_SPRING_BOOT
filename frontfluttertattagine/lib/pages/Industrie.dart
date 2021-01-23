@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class Industrie extends StatelessWidget{
   @override
@@ -17,6 +18,27 @@ class Industrie extends StatelessWidget{
           ),
         ),
         backgroundColor: Color(0xff3b8391),
+      ),
+      body: Column(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Container(
+              child: Image.network("https://visme.co/blog/wp-content/uploads/2020/02/header-1200.gif"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Text(
+              "DESOLE CHERS UTILISATEURS CE DEPARTEMENT N'EST PAS ENCORE DISPONIBLE",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 22.0,
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
