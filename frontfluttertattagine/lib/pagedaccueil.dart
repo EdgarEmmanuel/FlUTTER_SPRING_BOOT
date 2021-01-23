@@ -7,6 +7,7 @@ import 'package:frontfluttertattagine/pages/Numerique.dart';
 import 'package:frontfluttertattagine/pages/Tertiaire.dart';
 
 class AccueilPage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -27,6 +27,8 @@ dependencies:
   http: ^0.12.1
   dio: ^3.0.0
   data_connection_checker: 0.3.4
+  flutter_local_notifications: 3.0.3
+  rxdart: ^0.23.1
 
 
   # The following adds the Cupertino Icons font to your application.
