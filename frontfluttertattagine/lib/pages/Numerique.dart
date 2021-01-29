@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:frontfluttertattagine/pagedaccueil.dart';
+import 'package:frontfluttertattagine/pages/numerique/Maintenance.dart';
+import 'package:frontfluttertattagine/pages/numerique/Reseau.dart';
 
 class Numerique extends StatelessWidget{
   @override
@@ -89,12 +92,12 @@ class Numerique extends StatelessWidget{
                 title: Text(
                     "Réseau informatique"
                 ),
-                // onTap: ()=>{
-                //   Navigator.pop(context),
-                //   Navigator.push(context, MaterialPageRoute(
-                //       builder: (context)=>Tertaire()
-                //   )),
-                // },
+                onTap: ()=>{
+                  Navigator.pop(context),
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context)=> Reseau()
+                  )),
+                },
               ),
               ListTile(
                 trailing: Icon(Icons.arrow_right),
@@ -102,12 +105,25 @@ class Numerique extends StatelessWidget{
                 title: Text(
                     "Maintenance informatique"
                 ),
-                // onTap: ()=>{
-                //   Navigator.pop(context),
-                //   Navigator.push(context, MaterialPageRoute(
-                //       builder: (context)=> Apropos()
-                //   )),
-                // },
+                onTap: ()=>{
+                  Navigator.pop(context),
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context)=> Maintenance()
+                  )),
+                },
+              ),
+              ListTile(
+                trailing: Icon(Icons.arrow_right),
+                leading: Icon(Icons.exit_to_app),
+                title: Text(
+                    "Retour"
+                ),
+                onTap: ()=>{
+                  Navigator.pop(context),
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context)=> AccueilPage()
+                  ))
+                },
               ),
             ],
           ),
