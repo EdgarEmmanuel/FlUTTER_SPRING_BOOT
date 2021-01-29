@@ -69,6 +69,7 @@ flutter:
     - images/tertiaireGif.gif
     - images/seck.png
     - images/read.png
+    - images/webdeveloper.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
