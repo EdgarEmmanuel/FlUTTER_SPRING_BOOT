@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:frontfluttertattagine/pagedaccueil.dart';
 import 'package:frontfluttertattagine/pages/numerique/Maintenance.dart';
+import 'package:frontfluttertattagine/pages/numerique/Marketing.dart';
 import 'package:frontfluttertattagine/pages/numerique/Reseau.dart';
 
 class Numerique extends StatelessWidget{
@@ -66,12 +67,12 @@ class Numerique extends StatelessWidget{
                 title: Text(
                     "Marketing digital"
                 ),
-                // onTap: ()=>{
-                //   Navigator.pop(context),
-                //   Navigator.push(context, MaterialPageRoute(
-                //       builder: (context)=>Industrie()
-                //   ))
-                // },
+                onTap: ()=>{
+                  Navigator.pop(context),
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => Marketing()
+                  ))
+                },
               ),
               ListTile(
                 trailing: Icon(Icons.arrow_right),
