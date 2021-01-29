@@ -52,7 +52,10 @@ class Numerique extends StatelessWidget{
                   " par des formations de renforcement de capacité.Ainsi le centre aura quatre (4) départements:"
                   " le département des métiers du numérique, des métiers de l’industrie, des métiers du tertiaire"
                   " et enfin le département des métiers de la gestion. Dans chaque département, des cursus de"
-                  " spécialisation y seront proposés."
+                  " spécialisation y seront proposés." ,
+              style: TextStyle(
+                fontWeight: FontWeight.bold
+              ),
             ),
           ),
         ],
