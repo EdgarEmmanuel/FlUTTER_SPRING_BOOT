@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:frontfluttertattagine/pages/Apropos.dart';
 import 'package:frontfluttertattagine/pages/Gestion.dart';
 import 'package:frontfluttertattagine/pages/Industrie.dart';
 import 'package:frontfluttertattagine/pages/Login.dart';
@@ -203,7 +204,20 @@ class AccueilPage extends StatelessWidget {
                 Navigator.pop(context),
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context)=>Tertaire()
-                ))
+                )),
+              },
+            ),
+            ListTile(
+              trailing: Icon(Icons.arrow_right),
+              leading: Icon(Icons.info),
+              title: Text(
+                  "A Propos"
+              ),
+              onTap: ()=>{
+                Navigator.pop(context),
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context)=> Apropos()
+                )),
               },
             ),
           ],
