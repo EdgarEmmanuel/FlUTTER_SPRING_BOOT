@@ -77,6 +77,9 @@ flutter:
     - images/communication.png
     - images/marketing.jpg
     - images/compt2.png
+    - images/network.jpg
+    - images/goal2.jpg
+    - images/comp3.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
