@@ -11,6 +11,10 @@ class Reseau extends StatelessWidget{
       appBar: AppBar(
         title: Text(
           "RESEAU INFORMATIQUE",
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.orange
+          ),
         ),
       ),
       body: SingleChildScrollView(

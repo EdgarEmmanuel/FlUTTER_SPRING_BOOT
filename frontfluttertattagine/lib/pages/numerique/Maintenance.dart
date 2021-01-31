@@ -11,7 +11,13 @@ class Maintenance extends StatelessWidget{
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("MAINTENANCE INFORMATIQUE"),
+        title: Text(
+            "MAINTENANCE INFORMATIQUE",
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.orange
+            ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(

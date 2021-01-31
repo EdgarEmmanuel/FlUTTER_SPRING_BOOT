@@ -8,7 +8,11 @@ class Communication extends StatelessWidget{
      backgroundColor: Colors.white,
      appBar: AppBar(
        title: Text(
-         "COMMUNICATION DIGITALE"
+         "COMMUNICATION DIGITALE",
+         style: TextStyle(
+             fontWeight: FontWeight.bold,
+             color: Colors.orange
+         ),
        ),
      ),
      body: SingleChildScrollView(

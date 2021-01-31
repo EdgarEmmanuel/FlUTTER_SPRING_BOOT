@@ -8,7 +8,11 @@ class Marketing extends StatelessWidget{
      backgroundColor: Colors.white,
      appBar: AppBar(
        title: Text(
-         "MARKETING DIGITAL"
+         "MARKETING DIGITAL",
+         style: TextStyle(
+             fontWeight: FontWeight.bold,
+             color: Colors.orange
+         ),
        ),
      ),
      body: SingleChildScrollView(
