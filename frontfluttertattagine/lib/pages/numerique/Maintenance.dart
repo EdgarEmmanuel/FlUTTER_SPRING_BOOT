@@ -89,14 +89,17 @@ class Maintenance extends StatelessWidget{
                     child: Row(
                       children: <Widget>[
                         Expanded(
-                          child: Image.asset(
-                            "images/goal.jpg",
-                            width: 10.0,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(57.0),
+                            child: Image.asset(
+                              "images/comptence.jpg",
+                              width: 10.0,
+                            ),
                           ),
                         ),
                         Expanded(
                           child: Text(
-                            "CCOMPETENCES VISEES",
+                            "COMPETENCES VISEES",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold
                             ),
@@ -105,6 +108,49 @@ class Maintenance extends StatelessWidget{
                         )
                       ],
                     )
+                ),
+                Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Column(
+                    children: [
+                      ListTile(
+                        leading: Icon(Icons.rate_review),
+                        title: Text(
+                            "diagnostiquer un dysfonctionnement matériel ou logiciel informatique, "
+                        ),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.rate_review),
+                        title: Text(
+                            "configurer un poste de travail"
+                        ),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.rate_review),
+                        title: Text(
+                            "changer ou réparer un élément défectueux"
+                        ),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.rate_review),
+                        title: Text(
+                            "réaliser des opérations de maintenance sur les équipements et matériels informatiques. "
+                        ),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.rate_review),
+                        title: Text(
+                            "Installer un système d’exploitation"
+                        ),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.rate_review),
+                        title: Text(
+                            "Installer et désinstaller de manière sécurisée des logiciels"
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
