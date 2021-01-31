@@ -80,6 +80,9 @@ flutter:
     - images/network.jpg
     - images/goal2.jpg
     - images/comp3.jpg
+    - images/web.gif
+    - images/web3.gif
+    - images/web4.gif
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
