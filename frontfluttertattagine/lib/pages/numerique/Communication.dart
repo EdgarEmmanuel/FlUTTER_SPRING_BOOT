@@ -5,6 +5,7 @@ class Communication extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return Scaffold(
+     backgroundColor: Colors.white,
      appBar: AppBar(
        title: Text(
          "COMMUNICATION DIGITALE"
@@ -17,15 +18,18 @@ class Communication extends StatelessWidget{
              children: <Widget>[
                Padding(
                  padding: EdgeInsets.all(10.0),
-                 child:Image.asset(
-                   "images/maintenance.png",
-                   width: 170.0,
+                 child:ClipRRect(
+                   borderRadius: BorderRadius.circular(57.0),
+                   child: Image.asset(
+                     "images/communication.png",
+                     width: 370.0,
+                   ),
                  ),
                ),
                Padding(
                  padding: EdgeInsets.all(10.0),
                  child: Text(
-                   "MAINTENANCE INFORMATIQUE",
+                   "COMMUNICATION DIGITALE",
                    textAlign: TextAlign.center,
                    style: TextStyle(
                        fontWeight: FontWeight.bold,
@@ -45,7 +49,7 @@ class Communication extends StatelessWidget{
                        ),
                        Expanded(
                          child: Text(
-                           "OBJECTIFS GENERAUX",
+                           "OBJECTIF GENERAL",
                            style: TextStyle(
                                fontWeight: FontWeight.bold
                            ),
@@ -62,20 +66,9 @@ class Communication extends StatelessWidget{
                      ListTile(
                        leading: Icon(Icons.bookmark_border),
                        title: Text(
-                           "Savoir Installer, dépanner et entretenir des équipements informatiques "
-                               "ou bureautiques (matériels, logiciels ou réseaux)"
-                       ),
-                     ),
-                     ListTile(
-                       leading: Icon(Icons.bookmark_border),
-                       title: Text(
-                           "Assembler un équipement"
-                       ),
-                     ),
-                     ListTile(
-                       leading: Icon(Icons.bookmark_border),
-                       title: Text(
-                           "Assister les utilisateurs"
+                           "Savoir mener des opérations de communication et de diffusion de l’information "
+                               "grâce à des outils ou support de "
+                               "communication selon la stratégie définie par l’entreprise."
                        ),
                      ),
                    ],
@@ -86,6 +79,15 @@ class Communication extends StatelessWidget{
                    child: Row(
                      children: <Widget>[
                        Expanded(
+                         child: Text(
+                           "COMPETENCES VISEES",
+                           style: TextStyle(
+                               fontWeight: FontWeight.bold
+                           ),
+                           textAlign: TextAlign.center,
+                         ),
+                       ),
+                       Expanded(
                          child: ClipRRect(
                            borderRadius: BorderRadius.circular(57.0),
                            child: Image.asset(
@@ -94,15 +96,6 @@ class Communication extends StatelessWidget{
                            ),
                          ),
                        ),
-                       Expanded(
-                         child: Text(
-                           "COMPETENCES VISEES",
-                           style: TextStyle(
-                               fontWeight: FontWeight.bold
-                           ),
-                           textAlign: TextAlign.center,
-                         ),
-                       )
                      ],
                    )
                ),
@@ -113,37 +106,43 @@ class Communication extends StatelessWidget{
                      ListTile(
                        leading: Icon(Icons.rate_review),
                        title: Text(
-                           "diagnostiquer un dysfonctionnement matériel ou logiciel informatique, "
+                           "techniques de communication"
                        ),
                      ),
                      ListTile(
                        leading: Icon(Icons.rate_review),
                        title: Text(
-                           "configurer un poste de travail"
+                           "normes rédactionnelles"
                        ),
                      ),
                      ListTile(
                        leading: Icon(Icons.rate_review),
                        title: Text(
-                           "changer ou réparer un élément défectueux"
+                           "utilisation d’outils de travail collaboratif"
                        ),
                      ),
                      ListTile(
                        leading: Icon(Icons.rate_review),
                        title: Text(
-                           "réaliser des opérations de maintenance sur les équipements et matériels informatiques. "
+                           "maîtrise des outils de web analyse"
                        ),
                      ),
                      ListTile(
                        leading: Icon(Icons.rate_review),
                        title: Text(
-                           "Installer un système d’exploitation"
+                           "capacités rédactionnelles (revues, presse, communiqué…)"
                        ),
                      ),
                      ListTile(
                        leading: Icon(Icons.rate_review),
                        title: Text(
-                           "Installer et désinstaller de manière sécurisée des logiciels"
+                           "conception des supports de communication visuelle"
+                       ),
+                     ),
+                     ListTile(
+                       leading: Icon(Icons.rate_review),
+                       title: Text(
+                           "amélioration de l’e-réputation d’un site web et son positionnement sur la toile"
                        ),
                      ),
                    ],
