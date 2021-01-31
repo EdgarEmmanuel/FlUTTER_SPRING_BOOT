@@ -1,1 +1,3 @@
-Ce projet consiste à creer l'application mobile du centre cfp-tattaguine
+# REALISATION APPLICATION MOBILE AVEC FLUTTER :star:
+
+> une application qui presentera les differents departements du CFP GETECH
