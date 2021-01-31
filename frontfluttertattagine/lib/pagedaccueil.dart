@@ -146,17 +146,17 @@ class AccueilPage extends StatelessWidget {
                 color: Color(0xff3b8391),
               ),
             ),
-            ListTile(
-              trailing: Icon(Icons.arrow_right),
-              leading: Icon(Icons.account_circle),
-              title: Text('Se Connecter'),
-              onTap: (){
-                Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> Login("")
-                ));
-              },
-            ),
+            // ListTile(
+            //   trailing: Icon(Icons.arrow_right),
+            //   leading: Icon(Icons.account_circle),
+            //   title: Text('Se Connecter'),
+            //   onTap: (){
+            //     Navigator.pop(context);
+            //     Navigator.push(context, MaterialPageRoute(
+            //       builder: (context)=> Login("")
+            //     ));
+            //   },
+            // ),
             ListTile(
               trailing: Icon(Icons.arrow_right),
               leading: Icon(Icons.personal_video),
